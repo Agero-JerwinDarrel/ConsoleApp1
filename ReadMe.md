@@ -20,6 +20,14 @@
 #           Lion & Dog are mammals - create a Lion class and Dog class
 #           Parrot & Penguin are Birds - create a Parrot and Penguin class
 
+### public class Lion : Mammal 
+### public string Growl() => unique to Lion alone (for this exercise only)
+### public class Parrot : Bird, IFly 
+### must implement IFly (for example only) w/c has Fly method so..
+### public class Bird : IFly { public virtual void Fly() }
+
+### public class Parrot : Bird { public override void Fly() }
+
 ## Loop through all the items in the list
 ## Print all the name of Fishes, Mammal and Birds only using INTERFACE
 
