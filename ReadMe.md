@@ -13,13 +13,6 @@
 ## Above are Animal types (_ofType) and their class (_class)
 
 #### With the exception of the Animal (abstract) class, add specific features (properties or attributes) to each class that are distinct only to the Animal specie / class, this can be done by abstraction by inheritance or by interface.
-
-
-# Declare a list of Animals - and add 2 species of each per (sub)class
-# Example:
-#           Lion & Dog are mammals - create a Lion class and Dog class
-#           Parrot & Penguin are Birds - create a Parrot and Penguin class
-
 ### public class Lion : Mammal 
 ### public string Growl() => unique to Lion alone (for this exercise only)
 ### public class Parrot : Bird, IFly 
@@ -27,6 +20,11 @@
 ### public class Bird : IFly { public virtual void Fly() }
 
 ### public class Parrot : Bird { public override void Fly() }
+
+# Declare a list of Animals - and add 2 species of each per (sub)class
+# Example:
+#           Lion & Dog are mammals - create a Lion class and Dog class
+#           Parrot & Penguin are Birds - create a Parrot and Penguin class
 
 ## Loop through all the items in the list
 ## Print all the name of Fishes, Mammal and Birds only using INTERFACE

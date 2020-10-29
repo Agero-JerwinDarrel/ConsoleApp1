@@ -1,17 +1,27 @@
 ﻿using System;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace prelim_exam
 {
-    public class Amphibian : Animal
+    public class Amphibian : Animal, IPrintName
     {
-        public override string GetClass()
+        public void PrintName()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.Name);
         }
+    }
 
-        public override string OfType()
-        {
-            throw new NotImplementedException();
-        }
+    public interface IPrintName
+    {
+        void PrintName();
+    }
+
+    public class Turtle : Amphibian
+    {
+    }
+
+    public class Frog : Amphibian
+    {
+
     }
 }

@@ -14,17 +14,16 @@ namespace prelim_exam
         //TODO: Must expose the value of _numberOfLegs but not the variable OUTSIDE the class
         int _numberOfLegs;
 
+        string _name;
+
 
         //Note: This is a auto-implemented getter-setter
         public bool CanSwim { get; set; }
+        public string Name => _name;
 
-
-        public abstract string GetClass();
-        public abstract string OfType();
+        public string GetClass() => _class;
+        public string OfType() => _ofType;
         public bool HasLegs() => _numberOfLegs > 0;
 
-        public abstract void Hunt();
-
-        public abstract void Sound();
     }
 }
