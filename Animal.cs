@@ -1,29 +1,31 @@
-﻿
+﻿using prelim_exam;
+
 namespace prelim_exam
 {
-    public abstract class Animal 
+    public abstract class Animal
     {
+
         //TODO: Modify this class so that we can set _class ONLY ONCE 
-        string _class;
+        public string _class { get; set; }
 
         //TODO: Modify this class so that we can set _ofType ONLY ONCE
         //_ofType sample: Bird, Fish, Mammal -- all these classes are already provided
-        string _ofType;
+        public string _ofType { get; set; }
 
         //TODO: Modify so that we can set number of legs ONLY ONCE
         //TODO: Must expose the value of _numberOfLegs but not the variable OUTSIDE the class
-        int _numberOfLegs;
+        public int _numberOfLegs { get; set; }
 
-        string _name;
-
+        public string Name { get; set; }
 
         //Note: This is a auto-implemented getter-setter
         public bool CanSwim { get; set; }
-        public string Name => _name;
+        
 
-        public string GetClass() => _class;
-        public string OfType() => _ofType;
+        public abstract void GetClass();
+        public abstract void GetType();
         public bool HasLegs() => _numberOfLegs > 0;
+
 
     }
 }

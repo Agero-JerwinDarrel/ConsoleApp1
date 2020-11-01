@@ -1,35 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
-
+using prelim_exam;
+using System.Threading;
 namespace prelim_exam
 {
+
     class Program
     {
         static void Main(string[] args)
         {
+            Snake snake = new Snake();
+            snake.GetClass();
+            snake.GetType();
+            snake.snek();
+
+            Console.WriteLine("-->");
+
+            Axolotl axolotl = new Axolotl();
+            axolotl.immortal();
+
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.WriteLine("");
+
+            Mammoth mammoth = new Mammoth();
+            mammoth.GetClass();
+            mammoth.GetType();
+            mammoth.mammothstuff();
+
+            Console.WriteLine("-->");
+            
+            Bear bear = new Bear();
+            bear.bearstash();
+
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.WriteLine("");
+
+            Crow crow = new Crow();
+            crow.GetClass();
+            crow.GetType();
+            crow.crowsnest();
+
+            Console.WriteLine("-->");
+
+            Sparrow dove = new Sparrow();
+            dove.Pokeball();
 
 
-            List<Animal> listOfAnimals = new List<Animal>();
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.WriteLine("");
 
-            Amphibian turtle = new Turtle();
-            Amphibian frog = new Frog();
+            Carpy goldfish = new Carpy();
+            goldfish.GetClass();
+            goldfish.GetType();
+            goldfish.Kphish();
 
-            turtle.Name = "Lassie";
-            frog.Name = "Ernie";
+            Console.WriteLine("-->");
 
-            listOfAnimals.Add(turtle);
-            listOfAnimals.Add(frog);
+            Carp carp = new Carp();
+            carp.GetClass();
+            carp.GetType();
+            carp.carpinfo();
 
-        
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.WriteLine("");
 
-            foreach (IPrintName a in listOfAnimals)
-            {
-                a.PrintName();
-               
-            }
+            KD kd = new KD();
+            kd.GetClass();
+            kd.GetType();
+            kd.Dlair();
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("");
+
+            Iguana iguana = new Iguana();
+            iguana.iggy();
         }
+
     }
 }
